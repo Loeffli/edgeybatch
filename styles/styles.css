@@ -82,32 +82,15 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-main {
-  padding-top: 50px;
+/* sections */
+main .section {
+  padding: 90px 50px;
 }
 
 main img {
   max-width: 100%;
   width: auto;
   height: auto;
-}
-
-/* sections */
-main .section {
-  padding: 64px 16px;
-}
-
-@media (width >= 600px) {
-  main .section {
-    padding: 64px 32px;
-  }
-}
-
-@media (width >= 900px) {
-  .section > div {
-    max-width: 1200px;
-    margin: auto;
-  }
 }
 
 /* section metadata */

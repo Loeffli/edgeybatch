@@ -3,7 +3,7 @@
   display: grid;
   grid-column-gap: 15px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 415px));
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .resource-tile {
