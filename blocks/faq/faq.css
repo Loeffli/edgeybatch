@@ -1,0 +1,44 @@
+.faq-wrapper {
+    margin-left: 0px;
+    font-family: var(--light);
+    box-sizing: border-box;
+  }
+
+.faq-item{
+    display: flex;
+    width: 100%;
+    padding: 11px;
+    color: #222;
+  }
+
+.faq-item:nth-child(even) {
+    bacskground-color: #fafafa;
+}
+
+.faq-item:nth-child(odd) {
+    bsackground-color: #eee;
+}
+
+.faq-topic {
+    width: 200px; 
+    color: red;
+    font-family: var(--black);
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.faq-qawrapper{
+    width: 100%;
+}
+  
+.faq-question {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    font-size: 16px;
+    padding-left:20px;
+    line-height: 1.25;
+}

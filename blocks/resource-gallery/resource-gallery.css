@@ -33,7 +33,6 @@
 
 .resource-tile:hover {
   cursor:pointer;
-  dbox-shadow: 0px 0px 9px 10px rgba(0, 0, 0, 0.3);
   border: 5px solid #b00;
 }
 
