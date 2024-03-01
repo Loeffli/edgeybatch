@@ -21,3 +21,10 @@ export default async function decorate(block) {
     block.append(footer);
   }
 }
+
+const $drEdge = document.createElement("img");
+$drEdge.src = "/images/dr-edge.webp";
+$drEdge.id = "dr-edge";
+$drEdge.alt = "Dr. Edge";
+
+document.querySelector("footer").append($drEdge);

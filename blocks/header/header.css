@@ -31,13 +31,12 @@ header {
   margin: 0;
   padding: 0;
   top: 5px;
-  left: 510px;
+  left: 450px;
 }
 
 .header li {
-  float: left;
-  
-  margin-right: 25px;
+  float: left;  
+  margin-right: 15px;
 }
 
 .header li a, .header li a:link, .header li a:visited {

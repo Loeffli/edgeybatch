@@ -16,38 +16,39 @@ export default async function decorateFaq($block) {
   //parsing the JSON rows i.e. the resource records
   json.data.forEach((row, i) => {
 
-    //faq item
-    const $item = document.createElement('div');
-    $item.classList.add('faq-item');
+    if (row.Status === "Approved") {
 
-    // topic
-    const $topic = document.createElement('div');
-    $topic.classList.add('faq-topic');
-    $topic.innerHTML = row.Topic;
+      //faq item
+      const $item = document.createElement('div');
+      $item.classList.add('faq-item');
 
-    // question-answer-wrapper
-    const $qawrapper = document.createElement('div');
-    $qawrapper.classList.add('faq-qawrapper');
+      // topic
+      const $topic = document.createElement('div');
+      $topic.classList.add('faq-topic');
+      $topic.innerHTML = row.Topic;
 
-    //question
-    const $question = document.createElement('div');
-    $question.classList.add('faq-question');
-    $question.id = `q${(i + 1)}`;
-    $question.innerText = row.Question;
-    //CML addAnchorLink($dt);
+      // question-answer-wrapper
+      const $qawrapper = document.createElement('div');
+      $qawrapper.classList.add('faq-qawrapper');
 
-    //answer
-    const $answer = document.createElement('div');
-    $answer.classList.add('faq-answer');
-    $answer.innerText = row.Answer;
-    
+      //question
+      const $question = document.createElement('div');
+      $question.classList.add('faq-question');
+      $question.id = `q${(i + 1)}`;
+      $question.innerText = row.Question;
+      //CML addAnchorLink($dt);
 
-    $qawrapper.append($question, $answer);
-    $item.append($topic, $qawrapper);
-    $block.append($item);
+      //answer
+      const $answer = document.createElement('div');
+      $answer.classList.add('faq-answer');
+      $answer.innerText = row.Answer;
+      
+
+      $qawrapper.append($question, $answer);
+      $item.append($topic, $qawrapper);
+      $block.append($item);
+    }
   });
-
-
 
   const selected = document.getElementById(window.location.hash.slice(1));
   if (selected) {
