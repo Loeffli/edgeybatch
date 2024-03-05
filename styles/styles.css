@@ -86,6 +86,7 @@ a:hover {
 /* sections */
 main .section {
   padding: 110px 50px;
+  color: #444;
 }
 
 main p {
