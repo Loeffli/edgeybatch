@@ -72,6 +72,7 @@ h6 { font-size: var(--heading-font-size-xs) }
 
 
 /* links */
+
 a:any-link {
   color: var(--link-color);
   text-decoration: none;
@@ -84,7 +85,24 @@ a:hover {
 
 /* sections */
 main .section {
-  padding: 90px 50px;
+  padding: 110px 50px;
+}
+
+main p {
+  font-size: 21px;
+}
+
+main li {
+  font-size: 21px;
+  margin: 20px;
+  line-height: 27px;
+  list-style-type: square;
+}
+
+main li a, main li a:link, main li a:visited {
+  font-size: 21px;
+  font-family: var(--black);
+  color: red;
 }
 
 main img {

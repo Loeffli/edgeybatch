@@ -26,17 +26,27 @@ header {
 }
 
 .header ul {
-  position: relative;
+  position: absolute;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   top: 5px;
-  left: 450px;
+  width: auto;
+  margin-left: 440px;
+  right: 291px;
+  height: 111px;
+  left: 0px;
 }
 
 .header li {
   float: left;  
-  margin-right: 15px;
+  margin-right: 5px;
+  display: inline;
 }
 
 .header li a, .header li a:link, .header li a:visited {
