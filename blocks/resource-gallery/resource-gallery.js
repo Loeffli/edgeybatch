@@ -60,7 +60,7 @@ export default async function decorateFaq($block) {
   //create Filters
   const $filterWrapper = document.createElement('div');
   $filterWrapper.id = "filterWrapper";
-  $filterWrapper.innerHTML = 'Show <select id="filterTag"><option value="all">all Tags</option></select> and <select id="filterType"><option value="all">all Types</option></select> and <select id="filterRole"><option value="all">all Roles</option></select> (<span id="filterNumber"></span>)';
+  $filterWrapper.innerHTML = 'Show <select id="filterType"><option value="all">all Types</option></select> in <select id="filterTag"><option value="all">all Topics</option></select> for <select id="filterRole"><option value="all">all Roles</option></select> (<span id="filterNumber"></span>)';
   $block.append($filterWrapper);
 
   //create filter options for Roles
@@ -154,7 +154,7 @@ export default async function decorateFaq($block) {
       //Source
       const $source = document.createElement('div');
       $source.classList.add('resource-tile-source');
-      $source.innerHTML = row.Source +" | "+ row.Type + ' ★★★★★ 842 <img class="language-flag" width="38" height="38" alt="English" src="/images/language-icons/EN.webp" />';
+      $source.innerHTML = row.Source +" | "+ row.Type + ' | ★★★★★ | 842 | <img class="language-flag" width="38" height="38" alt="English" src="/images/language-icons/EN.webp" />';
 
       
       //info tool tip

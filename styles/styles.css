@@ -83,10 +83,16 @@ a:hover {
   color: var(--link-hover-color);
 }
 
+main {
+  padding: 140px 50px;
+  box-sizing: border-box;  
+  
+}
+
 /* sections */
-main .section {
-  padding: 110px 50px;
+main .section {  
   color: #444;
+  border: 1px solid yellow;
 }
 
 main p {
