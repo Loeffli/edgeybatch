@@ -50,7 +50,7 @@ function submitForm(e) {
   fetch("https://main--edgeybatch--loeffli.hlx.page/clinic/clinic-requests", {
   method: "POST",
   headers: { "Content-type": "application/json" },
-  body: JSON.stringify({"data": {"firstName":"y","lastName":"yy","drNumber":"yyy","ASV":"yyyy"}})
+  body: JSON.stringify({"data": {"firstName":"x","lastName":"xx","drNumber":"xxx","ASV":"xxxx"}})
 });
 
 alert("yyyyy");
