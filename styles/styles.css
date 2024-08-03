@@ -92,7 +92,6 @@ main {
 /* sections */
 main .section {  
   color: #444;
-  border: 1px solid yellow;
 }
 
 main p {
